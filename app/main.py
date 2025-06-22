@@ -10,8 +10,8 @@ st.set_page_config(page_title="MedGPT – Diabetes Prediction", layout="centered
 st.title("🧬 MedGPT: Diabetes Risk Predictor")
 
 # Load model and scaler
-model_path = "diabetes_model.pkl"
-scaler_path = "diabetes_scaler.pkl"
+model_path = "app/diabetes_model.pkl"
+scaler_path = "app/diabetes_scaler.pkl"
 
 if not os.path.exists(model_path) or not os.path.exists(scaler_path):
     st.error("❌ Model or Scaler file not found! Please train the model first.")
